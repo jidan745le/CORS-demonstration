@@ -7,12 +7,12 @@
 
 若请求满足所有下述条件，则该请求可视为“简单请求”：
 
-#####  1.使用下列方法之一：
+###### 1.使用下列方法之一：
 GET
 HEAD
 POST
 
-######  2.Fetch 规范定义了对 CORS 安全的首部字段集合，不得人为设置该集合之外的其他首部字段。该集合为：
+###### 2.Fetch 规范定义了对 CORS 安全的首部字段集合，不得人为设置该集合之外的其他首部字段。该集合为：
 Accept
 Accept-Language
 Content-Language
@@ -29,7 +29,7 @@ application/x-www-form-urlencoded
 ###### 3.请求中的任意XMLHttpRequestUpload 对象均没有注册任何事件监听器；XMLHttpRequestUpload 对象可以使用 XMLHttpRequest.upload 属性访问。
 
 ###### 4.请求中没有使用 ReadableStream 对象。
-###预检请求
+### 预检请求
 
 ------------
 
@@ -61,7 +61,7 @@ text/plain
 ######  4.请求中的XMLHttpRequestUpload 对象注册了任意多个事件监听器。
 ######  5.请求中使用了ReadableStream对象。
 
-###附带身份凭证的请求
+### 附带身份凭证的请求
 
 ------------
 浏览器不会发送身份凭证信息。如果要发送凭证信息，需要设置 XMLHttpRequest 的某个特殊标志位。
