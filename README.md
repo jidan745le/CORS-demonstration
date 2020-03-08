@@ -1,5 +1,3 @@
-# CORS-demonstration
-通过node.js编程搞懂cors相关知识
 # 跨域的解决方案之CORS
 ## HTTP背景知识
 ### 简单请求
