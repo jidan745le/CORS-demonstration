@@ -1,0 +1,17 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    (async () => {
+        //携带身份请求
+        axios.defaults.withCredentials = true;
+        //跨域请求
+        axios.defaults.baseURL = 'http://localhost:3001';
+        //自定义头字段，使之成为preflight request
+        //浏览器检测到，从 JavaScript 中发起的请求需要被预检。
+        //预检请求中同时携带了下面两个首部字段：
+        //Access-Control-Request-Method: GET
+        //Access-Control-Request-Headers: XToken
+        const res = await axios.get("/users", {headers:{'XToken':'jilei'}})
+        console.log('data', res.data)
+    })()
+</script>
+Test
